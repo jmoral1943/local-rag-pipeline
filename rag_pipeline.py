@@ -64,7 +64,7 @@ def findRevalantData(vector) -> str:
 
 def sendPrompt(system_prompt: str) -> str:
     gemini_response = client.models.generate_content(
-        model = "gemini-2.5-flash",
+        model = "gemini-3.1-flash-lite-preview",
         contents=system_prompt
     )
 
